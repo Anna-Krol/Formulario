@@ -7,55 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Cadastro de devs</h1>
-        <h2 id="subtitle">Preencha suas informações</h2>
-    </header>
-    <form>
-        <fieldset class="grupo">
-            <label>Nome</label>
-            <input type="text" name="nome" id="nome" required>
-            <label>Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome" required>
-        </fieldset>
-        <fieldset>
-            <label>Email</label>
-            <input type="email" name="email" id="email" required>
-        </fieldset>
-        <fieldset>
-            <label>De qual lado da aplicação você desenvolve</label>
-            <label>
-                <input type="radio" name="devweb" value="frontend">Front-end
-            </label>
-            <label></label>
-                <input type="radio" name="devweb" value="backend">Back-end
-            </label>
-            <label></label>
-                <input type="radio" name="devweb" value="fullsatck">Fullstack
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>Senioridade</label>
-            <select id="senioridade">
-                <option selected disabled value=-->Selecione</option>
-                <option value="">Júnior</option>
-                <option value="">Pleno</option>
-                <option value="">senior</option>
-            </select>
-        </fieldset>
-        <fieldset class="grupo">
-            <label>Selecione as tecnologias que utiliza:</label>
-            <input type="checkbox" id="tecnologia1" name="tecnologia1">HTML
-            <input type="checkbox" id="tecnologia2" name="tecnologia2">CSS
-            <input type="checkbox" id="tecnologia3" name="tecnologia3">JavaScript
-            <input type="checkbox" id="tecnologia4" name="tecnologia4">Python
-        </fieldset>
-        <fieldset>
-            <label>Conte um pouco da sua experiência</label> <br>
-            <textarea rows="6" style="width: 26em;" name="experiência" id="experiência"></textarea>
-        </fieldset>
-
-        <button type="submit">Concluído</button>
-    </form>
+    <main>
+        <header>
+            <h1 id="title">Cadastro de devs</h1>
+            <h2 id="subtitle">Preencha suas informações</h2>
+        </header>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <strong><label>Nome</label></strong>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label>De qual lado da aplicação você desenvolve</label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend">Front-end
+                </label>
+                <label></label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label></label>
+                    <input type="radio" name="devweb" value="fullsatck">Fullstack
+                </label>
+            </div>
+            <div class="campo">
+                <label>Senioridade</label>
+                <select id="senioridade">
+                    <option selected disabled value=-->Selecione</option>
+                    <option value="">Júnior</option>
+                    <option value="">Pleno</option>
+                    <option value="">senior</option>
+                </select>
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label>Selecione as tecnologias que utiliza:</label>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1">HTML
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2">CSS
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3">JavaScript
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4">Python
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label>Conte um pouco da sua experiência</label> <br>
+                <textarea rows="6" style="width: 26em;" name="experiência" id="experiência"></textarea>
+            </div>
+            
+            <button type="submit">Concluído</button>
+        </form>
+    </main>
 </body>
 </html>
